@@ -1,0 +1,97 @@
+/* HTML Elements */
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+h1 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.button-link {
+  color: white;
+}
+
+.button-link:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* Classes */
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* id's */
+#title {
+  background-color: #284E78;
+  color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding-bottom: 4.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 2.5rem;
+
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.2rem;
+}
+
+.intro-row {
+  text-align: center;
+}
+
+/* Title Image */
+.profile-image {
+  height: 250px;
+  display: block;
+  margin: auto;
+  border-radius: 125px;
+}
+
+/* All Sections */
+.row {
+  margin: 10px;
+}
+
+/* Sports Section */
+#sports {
+  padding: 50px;
+  background-color: #0A2A42;
+  color: white;
+}
+
+.info-img {
+  width: 100%
+}
+
+/* Baking Section */
+
+#baking {
+  padding: 50px;
+  background-color: #284E78;
+  color: white;
+}
+
+
+/* Volunteering Section */
+#volunteering {
+  padding: 50px;
+  background-color: #0A2A42;
+  color: white;
+}
