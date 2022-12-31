@@ -2,25 +2,28 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Bruin Plate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kathy Zhang</title>
 
   <!-- Import Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- import JS Bootstrap code -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
 
   <!-- embed fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Slab&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Slab&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- icons! -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+  <!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 <body>
 
@@ -51,10 +54,11 @@
 
 
       <!-- Title -->
-      <div class="intro-row">
+      <div class="intro-row animated fadeIn delay-1s">
         <h3>Hi! I'm</h3>
         <h1>Kathy Zhang</h1>
         <img class="profile-image" src="images/kathy-profile.jpg" alt="salad-img">
+        <p>Check out some of my activities below:</p>
       </div>
     </div>
   </section>
@@ -64,13 +68,17 @@
 
   <!-- order-lg refers to screen sizes greater than 992 pixels wide -->
   <!-- order-* refers to small and medium screen sizes -->
-  <section id="sports">
-    <div class="container">
-      <h1 style="text-align: center">Sports</h1>
+  <section id="sports" class="dark-bg">
+    <!-- <div class="container">
+      <h2 style="text-align: center">Sports</h1>
       <div class="row info-row">
         <div class="col-lg-7">
-          <h2>Activity</h2>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
+          <p class="activity-title">Volleyball</p>
+          <ul class="activity-description">
+            <li>Played for Team ____ for X Years</li>
+            <li>___ Tournaments played</li>
+            <li>Crucial position on team</li>
+          </ul>
         </div>
         <div class="col-lg-5">
           <img src="images/test-img.jpg" alt="" class="info-img">
@@ -78,68 +86,161 @@
       </div>
       <div class="row info-row">
         <div class="col-lg-5 order-2 order-lg-1">
-          <img src="images/test-img.jpg" alt="" class="info-img">
+          <img src="images/kung-fu.jpg" alt="" class="info-img">
         </div>
         <div class="col-lg-7 order-1 order-lg-2">
-          <h2>Activity</h2>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
+          <p class="activity-title">Kung Fu</p>
+          <ul class="activity-description">
+            <li>Bullet Point 1</li>
+            <li>Bullet Point 2</li>
+            <li>Bullet Point 3</li>
+          </ul>
         </div>
       </div>
-    </div>
-
-  </section>
-
-
-  <section id="baking">
+    </div> -->
+    <h2 style="text-align: center">Sports</h2>
+    <br>
+    <h3 style="text-align: center">Kung Fu</h3>
     <div class="container">
-      <h1 style="text-align: center">Baking</h1>
-      <div class="row info-row">
-        <div class="col-lg-7">
-          <h2>Activity</h2>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
+      <div id="kung-fu-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/KathyKungFu1.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/KathyKungFu3.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/KathyKungFu4.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/KathyKungFu5.png" class="carousel-img" alt="kathy kung fu">
+          </div>
         </div>
-        <div class="col-lg-5">
-          <img src="images/test-img.jpg" alt="" class="info-img">
-        </div>
-      </div>
-      <div class="row info-row">
-        <div class="col-lg-5 order-2 order-lg-1">
-          <img src="images/test-img.jpg" alt="" class="info-img">
-        </div>
-        <div class="col-lg-7 order-1 order-lg-2">
-          <h2>Activity</h2>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
-        </div>
+        <a class="carousel-control-prev" href="#kung-fu-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#kung-fu-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
     </div>
 
-  </section>
-
-
-  <section id="volunteering">
+    <br>
+    <h3 style="text-align: center">Volleyball</h3>
     <div class="container">
-      <h1 style="text-align: center">Volunteering</h1>
-      <div class="row info-row">
-        <div class="col-lg-7">
-          <h2>Activity</h2>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
+      <div id="volleyball-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/KathyVolleyball1.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/KathyVolleyball2.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/KathyVolleyball3.png" class="carousel-img" alt="kathy kung fu">
+          </div>
         </div>
-        <div class="col-lg-5">
-          <img src="images/test-img.jpg" alt="" class="info-img">
-        </div>
+        <a class="carousel-control-prev" href="#volleyball-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#volleyball-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
-      <div class="row info-row">
-        <div class="col-lg-5 order-2 order-lg-1">
-          <img src="images/test-img.jpg" alt="" class="info-img">
+    </div>
+  </section>
+
+  <section id="baking" class="light-bg">
+    <h2 style="text-align: center">Baking</h2>
+    <div class="container">
+      <div id="baking-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Baking1.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Baking2.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Baking3.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Baking4.png" class="carousel-img" alt="kathy kung fu">
+          </div>
         </div>
-        <div class="col-lg-7 order-1 order-lg-2">
-          <h2>Activity</h2>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</p>
+        <a class="carousel-control-prev" href="#baking-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#baking-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="volunteering" class="dark-bg">
+
+    <h2 style="text-align: center">Volunteering</h2>
+    <br>
+    <h3 style="text-align: center">South Dakota</h3>
+    <div class="container">
+      <div id="vol1-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/SouthDakota1.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/SouthDakota2.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/SouthDakota3.png" class="carousel-img" alt="kathy kung fu">
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#vol1-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#vol1-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+
+    <br>
+    <h3 style="text-align: center">South San Francisco</h3>
+    <div class="container">
+      <div id="vol2-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/SouthSanFran1.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/SouthSanFran2.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/SouthSanFran3.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/SouthSanFran4.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+          <div class="carousel-item">
+            <img src="images/SouthSanFran5.png" class="carousel-img" alt="kathy kung fu">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#vol2-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#vol2-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
     </div>
 
   </section>
+
+  <!-- Photo Gallery -->
 
 </body>
 

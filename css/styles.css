@@ -61,19 +61,56 @@ h1 {
   height: 250px;
   display: block;
   margin: auto;
+  margin-bottom: 40px;
   border-radius: 125px;
 }
 
 /* All Sections */
+
+.dark-bg {
+  background-color: #0A2A42;
+  padding: 50px;
+  color: white;
+}
+
+.light-bg {
+  background-color: #284E78;
+  padding: 50px;
+  color: white;
+}
+
 .row {
   margin: 10px;
 }
 
+h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.activity-title {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.activity-description {
+  color: lightgrey;
+}
+
 /* Sports Section */
-#sports {
-  padding: 50px;
-  background-color: #0A2A42;
-  color: white;
+.carousel {
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-img {
+  display: inline;
+  object-position: center;
+  width: 75%;
+  
+  
 }
 
 .info-img {
@@ -82,16 +119,5 @@ h1 {
 
 /* Baking Section */
 
-#baking {
-  padding: 50px;
-  background-color: #284E78;
-  color: white;
-}
-
 
 /* Volunteering Section */
-#volunteering {
-  padding: 50px;
-  background-color: #0A2A42;
-  color: white;
-}
