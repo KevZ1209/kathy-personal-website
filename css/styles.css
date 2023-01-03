@@ -67,6 +67,11 @@ h1 {
 
 /* All Sections */
 
+iframe {
+  width: 52vw;
+  height: 29vw;
+}
+
 .dark-bg {
   background-color: #0A2A42;
   padding: 50px;
@@ -98,8 +103,6 @@ h2 {
 }
 
 /* Sports Section */
-.carousel {
-}
 
 .carousel-item {
   text-align: center;
@@ -108,19 +111,22 @@ h2 {
 .carousel-img {
   display: inline;
   object-position: center;
-  width: 640px;
-  height: 360px;
+  /* width: 640px;
+  height: 360px; */
+  width: 52vw;
+  height: 29vw;
 }
 
 .carousel-img-tall {
   display: inline;
   object-position: center;
-  width: 427px;
-  height: 360px;
+  /* width: 427px;
+  height: 360px; */
+  width: 60%;
 }
 
 .info-img {
-  width: 100%
+  width: 100%;
 }
 
 /* Baking Section */
