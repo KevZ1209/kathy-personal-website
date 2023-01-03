@@ -108,9 +108,15 @@ h2 {
 .carousel-img {
   display: inline;
   object-position: center;
-  width: 75%;
-  
-  
+  width: 640px;
+  height: 360px;
+}
+
+.carousel-img-tall {
+  display: inline;
+  object-position: center;
+  width: 427px;
+  height: 360px;
 }
 
 .info-img {
