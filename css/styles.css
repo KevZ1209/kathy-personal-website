@@ -58,7 +58,8 @@ h1 {
 
 /* Title Image */
 .profile-image {
-  height: 250px;
+  width: 75%;
+  max-width: 250px;
   display: block;
   margin: auto;
   margin-bottom: 40px;
@@ -66,6 +67,11 @@ h1 {
 }
 
 /* All Sections */
+
+hr {
+  background-color: rgb(160, 160, 160);
+  max-width: 500px;
+}
 
 iframe {
   width: 52vw;
@@ -104,6 +110,7 @@ h2 {
 
 .media-carousel {
   height: 40vw;
+  max-height: 650px;
   /* Automatically change to scroll when necessary */
   overflow: auto;
 }
@@ -118,7 +125,7 @@ h2 {
   /* width: 640px;
   height: 360px; */
   width: 52vw;
-  
+  max-width: 750px;
 }
 
 .carousel-img-tall {
@@ -127,6 +134,7 @@ h2 {
   /* width: 427px;
   height: 360px; */
   height: 29vw;
+  max-width: 600px;
 }
 
 .info-img {
@@ -138,4 +146,15 @@ h2 {
   font-size: 14px;
 }
 
-/*  */
+/* Media Queries */
+
+/* if screen size is above 600 px in width */
+@media screen and (min-width: 601px) {
+
+}
+
+/* if screen size is 600 px or smaller in width */
+@media only screen and (max-width: 600px) {
+
+}
+
