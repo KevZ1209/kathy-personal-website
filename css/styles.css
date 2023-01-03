@@ -102,7 +102,11 @@ h2 {
   color: lightgrey;
 }
 
-/* Sports Section */
+.media-carousel {
+  height: 40vw;
+  /* Automatically change to scroll when necessary */
+  overflow: auto;
+}
 
 .carousel-item {
   text-align: center;
@@ -114,7 +118,7 @@ h2 {
   /* width: 640px;
   height: 360px; */
   width: 52vw;
-  height: 29vw;
+  
 }
 
 .carousel-img-tall {
@@ -122,14 +126,16 @@ h2 {
   object-position: center;
   /* width: 427px;
   height: 360px; */
-  width: 60%;
+  height: 29vw;
 }
 
 .info-img {
   width: 100%;
 }
 
-/* Baking Section */
+.media-desc {
+  margin-top: 5px;
+  font-size: 14px;
+}
 
-
-/* Volunteering Section */
+/*  */
