@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- import JS Bootstrap code -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
 
@@ -23,7 +24,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
   <!-- Animations -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="js/index.js" defer></script>
+
+</head>
 
 <body>
 
@@ -61,7 +64,12 @@
         <h3>Hi! I'm</h3>
         <h1>Kathy Zhang</h1>
         <img class="profile-image" src="images/kathy-profile.jpg" alt="salad-img">
-        <p>Hi! My name is Kathy Zhang and I’m a current 8th grader at Bowditch Middle School. I enjoy taking my dog for walks, baking, playing volleyball, listening to music, and volunteering with my family in my spare time. I enjoy learning in a hands-on environment, and becoming a mechanical engineer is one of my professional aspirations. Check out some of my activities below!</p>
+        <div class="intro-container">
+          <p>Hi! My name is Kathy Zhang and I'm a current 8th grader at Bowditch Middle School. </p>
+          <p id="intro-1" class="animated-intro">I enjoy taking my dog for walks, baking, playing volleyball, listening to music, and volunteering with my family in my spare time.</p>
+          <p id="intro-2" class="animated-intro">I enjoy learning in a hands-on environment, and becoming a mechanical engineer is one of my professional aspirations. </p>
+          <p id="intro-3" class="animated-intro">Check out some of my activities below!</p>
+        </div>
       </div>
     </div>
   </section>
@@ -325,36 +333,45 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/Personal1.png" class="carousel-img-tall" alt="kathy">
-            <p class="media-desc"></p>
-          </div>
-          <div class="carousel-item">
-            <img src="images/Personal2.png" class="carousel-img-tall" alt="kathy">
-            <p class="media-desc"></p>
-          </div>
-          <div class="carousel-item">
-            <img src="images/Personal3.png" class="carousel-img-tall" alt="kathy">
-            <p class="media-desc"></p>
-          </div>
-          <div class="carousel-item">
-            <img src="images/Personal4.png" class="carousel-img-tall" alt="kathy">
-            <p class="media-desc"></p>
-          </div>
-          <div class="carousel-item">
-            <img src="images/Personal5.png" class="carousel-img-tall" alt="kathy">
-            <p class="media-desc"></p>
-          </div>
-          <div class="carousel-item">
-            <img src="images/Personal6.png" class="carousel-img-tall" alt="kathy">
-            <p class="media-desc"></p>
-          </div>
-          <div class="carousel-item">
-            <img src="images/Personal7.png" class="carousel-img-tall" alt="kathy">
-            <p class="media-desc"></p>
+            <p class="media-desc">Me and my dog, Hermes</p>
           </div>
           <div class="carousel-item">
             <img src="images/Personal8.png" class="carousel-img-tall" alt="kathy">
-            <p class="media-desc"></p>
+            <p class="media-desc">Another one</p>
           </div>
+          <div class="carousel-item">
+            <img src="images/Personal7.png" class="carousel-img-tall" alt="kathy">
+            <p class="media-desc">Getting ready to perform with the Bowditch Middle School jazz band on alto sax.</p>
+          </div>
+          <div class="carousel-item">
+            <iframe src="https://www.youtube.com/embed/Soh-piZ0aDY" title="Fiesta Del Tigre - Mike Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="media-desc">Performing Fiesta Del Tigre by Mike Story for the Bowditch Jazz Band</p>
+          </div>
+          <div class="carousel-item">
+            <iframe src="https://www.youtube.com/embed/fHyom0lICdg" title="The Creeper - Neal Hefti" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="media-desc">The Creeper by Neal Hefti</p>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Personal2.png" class="carousel-img-tall" alt="kathy">
+            <p class="media-desc">Hiking trip!</p>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Personal3.png" class="carousel-img-tall" alt="kathy">
+            <p class="media-desc">Panini!</p>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Personal4.png" class="carousel-img-tall" alt="kathy">
+            <p class="media-desc">Universal Orlando Resort</p>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Personal5.png" class="carousel-img-tall" alt="kathy">
+            <p class="media-desc">Pumpkin carving!</p>
+          </div>
+          <div class="carousel-item">
+            <img src="images/Personal6.png" class="carousel-img-tall" alt="kathy">
+            <p class="media-desc">Go Bruins!</p>
+          </div>
+          
         </div>
         <a class="carousel-control-prev" href="#life-carousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>

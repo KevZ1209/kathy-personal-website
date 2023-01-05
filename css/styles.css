@@ -58,12 +58,24 @@ h1 {
 
 /* Title Image */
 .profile-image {
-  width: 75%;
+  width: 65%;
   max-width: 250px;
   display: block;
   margin: auto;
   margin-bottom: 40px;
   border-radius: 125px;
+}
+
+/* Profile Intro Animations */
+.animated-intro {
+  opacity: 0;
+  top: 75px;
+  position: relative;
+}
+
+.intro-container {
+  max-width: 500px;
+  margin: auto;
 }
 
 /* All Sections */
